@@ -1,0 +1,260 @@
+/* pages/my/setup/setup.wxss */
+
+page {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.view-page {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  position: absolute;
+  overflow: hidden;
+}
+
+.page-content {
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: auto;
+}
+
+.infocolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.inforow {
+  display: flex;
+  flex-direction: row;
+}
+
+.infoxitiao {
+  height: 2rpx;
+  width: 100%;
+  background-color: #ccc;
+}
+
+.infodxt {
+  height: 20rpx;
+  width: 100%;
+  background-color: #f1f4f6;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* 主体 */
+
+.hh {
+  width: 690rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  height: 48rpx;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+
+.jtimgdx {
+  width: 14rpx;
+  height: 24rpx;
+}
+
+.zantid {
+  font-size: 32rpx;
+  color: #333;
+}
+
+.ssimg {
+  padding-top: 10rpx;
+}
+
+.topershi {
+  margin-top: 20rpx;
+}
+
+.whole {
+  width: 100%;
+  background-color: #fff;
+}
+
+/*YYYYYYYYY */
+
+.defx {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.defxjd {
+  width: 100%;
+  height: auto;
+  border-radius: 42rpx 42rpx 0rpx 0rpx;
+  background-color: #e5e5e5;
+}
+
+.deziti {
+  padding-top: 45rpx;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  font-size: 36rpx;
+  color: #0e0d0d;
+}
+
+.dezimg {
+  padding-top: 45rpx;
+  margin-left: 18rpx;
+  margin-right: 18rpx;
+  height: auto;
+}
+
+.ss {
+  margin-left: 122rpx;
+  margin-right: 122rpx;
+}
+
+.imdedx {
+  width: 108rpx;
+  height: 108rpx;
+}
+
+.imgzit {
+  font-size: 20rpx;
+  color: #333;
+  width: 108rpx;
+  height: auto;
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+.quxtop {
+  margin-top: 50rpx;
+}
+
+.qux {
+  width: 100%;
+  height: 98rpx;
+  font-size: 36rpx;
+  color: #333;
+  background-color: #fff;
+  line-height: 98rpx;
+  text-align: center;
+  border: 0rpx solid #f9f9f9;
+}
+
+/* YYYYYYYYYYY */
+
+.b {
+  height: 100%;
+  background-color: #f1f4f6;
+}
+
+.bd {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+/* 网上 */
+
+.btn {
+  width: 80%;
+  padding: 20rpx 0;
+  border-radius: 10rpx;
+  text-align: c7enter;
+  margin: 40rpx 10%;
+  background: #0c1939;
+  color: #fff;
+}
+
+/*mask*/
+
+.drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #000;
+  opacity: 0.4;
+  overflow: hidden;
+}
+
+/*content*/
+
+.drawer_attr_box {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1001;
+  background: #fff;
+  border-radius: 42rpx 42rpx 0rpx 0rpx;
+}
+
+.drawer_content {
+  height: auto;
+  overflow-y: scroll;
+}
+
+.drawer_title {
+  padding: 35rpx;
+  font: 34rpx "microsoft yahei";
+  color: #333;
+  text-align: center;
+}
+
+.line {
+  border-bottom: 1px solid #ccc;
+}
+
+.xiaotiao {
+  width: 100%;
+  height: 10rpx;
+  background-color: #e5e5e5;
+}
+
+.drawer_titles {
+  padding: 40rpx;
+  font: 26rpx "microsoft yahei";
+  color: #999;
+  text-align: center;
+  /*超出一行文字自动隐藏 */
+  overflow: hidden;
+  /*文字隐藏后添加省略号 */
+  text-overflow: ellipsis;
+  /*强制不换行 */
+  white-space: nowrap;
+}
+
+.buttonn {
+  display: block;
+  padding: 0rpx;
+  margin: 0rpx;
+  border: none;
+  border-radius: 24rpx;
+  /* height: auto; */
+  height: 108rpx;
+  width: 108rpx;
+  font-size: 30rpx;
+  /* margin-left: 20rpx; */
+  background-color: #ffffff;
+}
+
+button[class="button"]:after {
+  border: 0;
+  border-radius: 0;
+}
