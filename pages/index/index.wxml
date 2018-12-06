@@ -1,0 +1,56 @@
+<!-- <nav-bar navbar-data='{{nvabarData}}'></nav-bar> -->
+<view class='one' style='margin-top: {{height}}px;' >
+  <view class='top'>
+    <text class='recom1 recom'>推荐</text>
+    <text class='recom2'>|</text>
+    <text class='lantextss' catchtap="onHome">{{address?address:'地址'}}</text>
+  </view>
+   <!-- wx:if="{{disabled}}" -->
+<view class='dsh' style='margin-top: {{height}}px;'>
+  <image class='dsh-tup' src='/img/tish.png'></image>
+  <view class='dsh-te'>点击添加到我的小程序</view>
+</view>
+</view>
+<import src="../public/public.wxml" />
+
+<view class='view-page'>
+
+  <!--这里放你的内容-->
+  <view class='fcolumnntainer'>
+    <view class='fhh'>
+      <view class='fss '>
+        <view class='frowcontainer hl'>
+          <view>
+            <image class='fimgdx' src='/images/follow/ss.png'></image>
+          </view>
+          <input class='fssrn hl' placeholder='请输入搜索内容'></input>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- <view class='scroll-lan'>
+
+    <scroll-view scroll-x class="scroll-view_H">
+      <text class="lantext {{childCid==0?'active':''}}" data-xzid='0' catchtap="onTab">推荐</text>
+      <text class="lantext" catchtap="onHome">{{address?address:'地址'}}</text>
+      <text class="lantext {{childCid==item.id?'active':''}}" wx:key="id" wx:for-index="index" wx:for="{{category}}" catchtap='onTab' data-xzid="{{item.id}}" wx:for-item="item">{{item.name}}</text>
+    </scroll-view>
+  </view> -->
+
+   
+  <scroll-view scroll-y="true" style="height:100%" bindscrolltolower="lower" data-lastid="{{lastid}}">
+    <view class='content'>
+      <view class="item-view">
+        <block wx:for="{{dataArray}}" wx:key="" wx:for-index="index">
+          <template is="item" data="{{...item ,index}}" wx:if="{{index%2==0}}"></template>
+        </block>
+      </view>
+      <view class="item-view">
+        <block wx:for="{{dataArray}}" wx:key="" wx:for-index="index">
+          <template is="item" data="{{...item ,index}}" wx:if="{{index%2==1}}"></template>
+        </block>
+      </view>
+    </view>
+  </scroll-view>
+
+</view>
