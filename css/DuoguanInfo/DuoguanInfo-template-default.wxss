@@ -1,0 +1,12 @@
+/*没有更多了*/
+.nothing {width: 70%;margin-left: auto;margin-right: auto}
+.nothing .line {height: 1px;background: #ddd;margin-top: 22rpx;}
+
+/******* color ********/
+.bgwhite,.search-box,.search-show,.fenlei,.msg-list,.paixu,.top, .content {background: #fff;}
+
+
+/******* green ********/
+.green,.title-item.active {color: #fea512;}
+button[type="primary"] {background: #fea512;}
+.button-hover[type="primary"],button[type="primary"][disabled],button[type="primary"][loading] {background: #fe930e;}
